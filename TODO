@@ -1,0 +1,37 @@
+Classes por Fazer
+
+Domain Core:
+	- (Record) PhotoMetadata 
+	- (Record) GPSLocation
+	- Photo
+	- Enum PhotoFactory
+	- MainLibrary
+	- (Abstract) ATrashLibrary
+	- RecentlyDeletedLibrary
+	- PhotoLibraryEvent
+	
+domain.core.views:
+	- (Interface) ILibraryView
+	- (Abstract) ALibraryView
+	- TrashLibraryView
+	- MainLibraryView
+	- (Interface) IViewsCatalog
+	- ViewsCatalog
+	
+domain.albums:
+	- (Interface) IAlbum
+	- (Abstract) AAlbum
+	- Album
+	- (Interface) IAlbumsCatalog
+	- AlbumsCatalog
+	
+domain.metadatareader:
+	- JpegMetadataReaderFactory
+	- JavaXTMetadataReaderAdapter
+	
+domain.facade: (fornecida)
+
+domain.controllers: 
+	- LibrariesController
+	- ViewsController
+	- AlbumsController
